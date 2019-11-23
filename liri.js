@@ -24,18 +24,13 @@ if (command === "concert-this") {
                         }
                     });
 
-                lse
-                if (song ===
-                    if (command === "spotify-this-song") {
-                        var song = process.argv[3]
+            } else if (command === "spotify-this-song") {
+                var song = process.argv[3];
 
-
-
-                    }
-                    e undefined) {
+                if (song === undefined) {
                     song = "The Sign";
-
                 }
+
 
 
                 spotify.search({
