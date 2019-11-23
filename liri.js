@@ -106,4 +106,13 @@ if (command === "concert-this") {
 
 
 
-                            }
+                                request("https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp", function(error, response, body) {
+
+                                    if (!error && response.statusCode === 200) {
+                                        console.log("-------------------------------------");
+                                        console.log("Venue: " + JSON.parse(body)[0].venue.name);
+                                        console.log("Location: " + JSON.parse(body)[0].venue.city + " " + JSON.parse(body)[0].venue.region);
+                                        console.log("Date: " + moment(JSON.parse(body)[0].datetime).format("MM/DD/YYYY"));
+                                        console.log("-------------------------------------");
+                                    }
+                                });
