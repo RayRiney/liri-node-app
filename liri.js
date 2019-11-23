@@ -23,7 +23,7 @@ if (command === "concert-this") {
 
 
                 }
-            }); node
+            });
 
     }
     else if (command === "spotify-this-song") {
