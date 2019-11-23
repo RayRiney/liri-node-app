@@ -62,3 +62,4 @@ if (command === "concert-this") {
                 if (movie === undefined) {
                     movie = "Mr. Nobody";
                 }
+                request("http://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=t
