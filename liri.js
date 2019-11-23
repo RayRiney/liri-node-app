@@ -8,13 +8,12 @@ var moment = require("moment");
 var command = process.argv[2];
 
 if (command === "concert-this") {
-    console.log('ping')
 
     var artist = process.argv[3];
 
 
     request("https://rest.bandsintown.com/artists/" + artist + "/events?app_id = codingbootcamp", function(error, response, body) {
-
+        console.log('here')
         if (!error && response.statusCode === 200) {
 
             console.log("------------------------");
