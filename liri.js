@@ -29,25 +29,25 @@ if (command === "concert-this") {
                     var song = process.argv[3]
 
 
-                    if (song ===
-                    }
-                    e undefined) {
-                    song = "The Sign";
+
+                }
+                e undefined) {
+                song = "The Sign";
+
+            }
+
+
+            spotify.search({
+                type: "track",
+                query: song
+            }, function(err, data) {
+                if (err) {
+                    return console.log("Error occured: " + err);
 
                 }
 
 
-                spotify.search({
-                    type: "track",
-                    query: song
-                }, function(err, data) {
-                    if (err) {
-                        return console.log("Error occured: " + err);
+                console.log("------------------------")
+                console.log("")
 
-                    }
-
-
-                    console.log("------------------------")
-                    console.log("")
-
-                })
+            })
