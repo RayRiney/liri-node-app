@@ -80,4 +80,3 @@ if (command === "concert-this") {
                     }
                 });
             }
-            elsefi
