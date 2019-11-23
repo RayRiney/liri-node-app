@@ -79,10 +79,31 @@ if (command === "concert-this") {
                         console.log("-------------------------------------");
                     }
                 });
+
+
+
+
+
             } else if (command === "do what it says") {
-                fs.readFile("")
+                fs.readFile("randon.txt", "utf8", function(error, data) {
+                            if (error) {
+                                return console.log(error);
 
 
 
 
-            }
+                            }
+
+                            console.log(data);
+                            var dataArr = data.split(",")
+                            console.log(dataArr);
+
+                            command = dataArr[0];
+                            whatTocommand = dataArr[1];
+
+                            if (command === "concert-this") {
+                                var artist = whatTocommand
+
+
+
+                            }
