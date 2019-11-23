@@ -20,7 +20,7 @@ if (command === "concert-this") {
         if (!error && response.statusCode === 200) {
 
             console.log("------------------------");
-            console.log(body)
+            console.log(JSON.parse(body))
                 // console.log("Venue:" + JSON.parse(body[0].venue.name); console.log("location:" + JSON.parse(body[0].venue.city + "" + JSON.parse(body)[0].venue.region); console.log("Date: + moment(JSON.parse(body)[0].datetime).format("mm / dd / yy)); 
             console.log("-----------------------");
 
