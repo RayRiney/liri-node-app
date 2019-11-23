@@ -3,7 +3,7 @@ var request = require("request");
 var Spotify = require('node-spotify-api');
 var keys = require("./keys.js");
 var fs = require("fs");
-var moment = rerquire("moment");
+var moment = require("moment");
 
 var command = process.argv[2];
 
