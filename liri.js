@@ -13,6 +13,7 @@ if (command === "concert-this") {
 
 
     request("https://rest.bandsintown.com/artists/" + artist + "/events?app_id = codingbootcamp", function(error, response, body) {
+        console.log(response.statusCode)
         if (error) {
             console.log(error)
         }
