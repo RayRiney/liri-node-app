@@ -80,7 +80,7 @@ if (command === "concert-this") {
                     }
                 });
             } else if (command === "do what it says") {
-                fs.read
+                fs.readFile
 
 
 
