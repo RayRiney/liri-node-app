@@ -8,7 +8,7 @@ var moment = require("moment");
 var command = process.argv[2];
 
 if (command === "concert-this") {
-
+    console.log('ping')
 
     var artist = process.argv[3];
 
