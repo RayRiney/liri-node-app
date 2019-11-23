@@ -50,3 +50,10 @@ if (command === "concert-this") {
                     console.log("Album: " + data.tracks.items[0].album.name);
                     console.log("-------------------------------------");
                 });
+            } else if (command === "movie-this") {
+
+                var movie = process.argv[3];
+
+                if (movie === undefined) {
+                    movie = "Mr. Nobody";
+                }
