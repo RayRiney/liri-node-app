@@ -79,4 +79,4 @@ if (command === "concert-this") {
                         console.log("-------------------------------------");
                     }
                 });
-            } else if (com) mand
+            } else if (commond
