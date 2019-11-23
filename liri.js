@@ -25,29 +25,30 @@ if (command === "concert-this") {
                     });
 
                 lse
-                if (command === "spotify-this-song") {
-                    var song = process.argv[3]
+                if (song ===
+                    if (command === "spotify-this-song") {
+                        var song = process.argv[3]
 
 
 
-                }
-                e undefined) {
-                song = "The Sign";
-
-            }
-
-
-            spotify.search({
-                type: "track",
-                query: song
-            }, function(err, data) {
-                if (err) {
-                    return console.log("Error occured: " + err);
+                    }
+                    e undefined) {
+                    song = "The Sign";
 
                 }
 
 
-                console.log("------------------------")
-                console.log("")
+                spotify.search({
+                    type: "track",
+                    query: song
+                }, function(err, data) {
+                    if (err) {
+                        return console.log("Error occured: " + err);
 
-            })
+                    }
+
+
+                    console.log("------------------------")
+                    console.log("")
+
+                })
